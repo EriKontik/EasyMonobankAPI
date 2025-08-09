@@ -35,6 +35,8 @@ Create a `.env` file in the project root:
 API_KEY=your_monobank_api_key_here
 ```
 
+Get the API key here - https://api.monobank.ua/index.html
+
 ### 4. Run the Script
 
 ```powershell
