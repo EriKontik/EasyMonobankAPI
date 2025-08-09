@@ -78,5 +78,6 @@ Feel free to open issues for bugs or feature requests.
 
 [ ] - Create a guide on how to use this repo
 
+
 [ ] - Make it as user friendly and carefree as possible
 

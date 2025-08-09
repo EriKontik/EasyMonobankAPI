@@ -3,6 +3,7 @@ import json
 import os
 from dotenv import load_dotenv
 from typing import Any, Dict, List, Optional
+from datetime import datetime, timedelta, timezone
 
 load_dotenv()
 
@@ -16,9 +17,6 @@ def get_client_info(key: str) -> dict:
     res = requests.get("https://api.monobank.ua/personal/client-info", headers={"X-Token": key})
     return res.json()
 
-import requests
-from datetime import datetime, timedelta, timezone
-import time
 
 def get_statement(account_id="0", from_date=None, to_date=None):
     """
@@ -138,7 +136,7 @@ def show_data(data: dict) -> None:
         print("Jars: None\n")
 
 if __name__ == "__main__":
-    # print(get_client_info(API_KEY))
-    print(show_data(get_client_info(API_KEY)))
+    data_client = get_client_info(API_KEY)
+    print(show_data(data_client))
     data = get_statement(account_id="0")
     print(print_transactions(data))
