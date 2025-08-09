@@ -72,14 +72,3 @@ show_data(data)
 Pull requests and suggestions are welcome!  
 Feel free to open issues for bugs or feature requests.
 
-**TODO**
-
-[x] - Implement the base functionality for an API requests 
-
-[x] - Add all the possible uses for an API
-
-[ ] - Create a guide on how to use this repo
-
-
-[ ] - Make it as user friendly and carefree as possible
-
